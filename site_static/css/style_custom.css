@@ -1,0 +1,11 @@
+header nav ul li {
+    text-transform: uppercase;
+}
+
+.video_title {
+    margin-bottom: 10px;
+    margin-top: 50px;
+    font-weight: bold;}
+    
+.content-inner__soc {
+    height: 50px; }

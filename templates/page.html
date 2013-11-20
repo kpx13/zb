@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ p.title }}{% endblock %}
+
+{% block body %}
+    <div class="wrapper-inner wrapper-inner_2">
+        <header>
+            <div class="contacts">
+                <span>+7.906.785.28.05</span>
+                <a class="contacts__mail" href="mailto:masttsafar@yandex.ru">masttsafar@yandex.ru</a>
+            </div>
+            <a href='/'><span class="logo"><img src="/static/img/head.jpg"/></span></a>
+
+            {% include 'menu.html' %}
+
+        </header>
+        
+        <div class="content__inner content__inner_2">
+            {{ p.content|safe }}
+            
+            
+            <p class="mark">Чтобы подписаться на заочную систему обучения Школы Будущего введите свое имя и действующий e-mail,
+                на странице аудиокниги, и прямо сейчас получите в подарок аудио-книгу Мастт Сафара
+                <span class="text-right">"Духовные пьяницы. Миражи настоящего".</span></p>
+            <div class="content__link content__link_1">
+                <img src="/static/img/audiobook.jpg" alt=""/>
+                <a href="/audiobook/" class="content__link__title">НА СТРАНИЦУ АУДИОКНИГИ</a>
+            </div>
+            <div class="content__link content__link_2">
+                <img src="/static/img/book.jpg" alt=""/>
+                <a href="/audiobook/" class="content__link__title">КУПИТЬ БУМАЖНУЮ КНИГУ</a>
+            </div>
+            {% include 'soc_block.html' %}
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <h4> © 2013 Школа будущего </h4>
+        </div>
+    </footer>
+{% endblock %}

@@ -1,0 +1,208 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div class="page-main">
+        <div class="b-scroll b-scroll_top">
+
+            <div class="b-scroll__content b-scroll__content_top">
+                <ul class="menu">
+                    <li><a href="/o-shkole/">О школе</a></li>
+                    <li><a href="/obuchenie/">Обучение</a></li>
+                    <li><a href="/audiobook/">Аудиокнига</a></li>
+                </ul>
+
+                <h1><span>Школа будущего</span></h1>
+                {{ text_1|safe }}
+            </div>
+        </div>
+        
+        <div class="content content-top">
+            <div class="video">
+
+            </div>
+            <div class="form-apply">
+                <form action="">
+                    <input type="text" name="apply-name" placeholder="ВАШЕ ИМЯ..."/>
+                    <input type="text" name="apply-email" placeholder="ВАШ E-MAIL ..."/>
+                    <input class="form-apply__btn btn__green" type="submit" value="ПОДАТЬ ЗАЯВКУ НА ОБУЧЕНИЕ"/>
+                </form>
+            </div>
+            
+            {{ text_2|safe }}
+
+            <div class="get-link">
+
+                <img src="/static/img/btn-book.png"/>
+                <a class="get-link__btn btn__green" href='/audiobook/'>ПОЛУЧИТЬ ССЫЛКУ НА АУДИОКНИГУ</a>
+            </div>
+
+        </div>
+        
+        <div class="b-scroll b-scroll_center">
+            <div class="b-scroll__content b-scroll__content_center">
+                <div class="quote">
+                    {{ text_3|safe }}
+                </div>
+            </div>
+        </div>
+        
+        <div class="content content-center">
+            <div class="content-center__left">
+                <div class="content-block">
+                    <span class="content-block__icon _1"></span>
+
+                    <div class="content-block__text">
+                        <h2><a href="/o-shkole/">О школе</a></h2>
+
+                        <p>В Школе работает система заочного обучения, учебные материалы
+                            скачиваются по ссылкам. </p>
+                    </div>
+                </div>
+                
+                <div class="content-block ">
+                    <span class="content-block__icon _7"></span>
+
+                    <div class="content-block__text">
+                        <h2><a href="/paradoks/">Парадокс-лаб</a></h2>
+
+                        <p>“Форсаж мозга” — тренировка над-логической триады (образное, парадоксальное, интуитивное
+                            мышление). </p>
+                    </div>
+                </div>
+                
+                <div class="content-block">
+                    <span class="content-block__icon _3"></span>
+
+                    <div class="content-block__text">
+                        <h2><a href="/harizma/">Харизма-лаб</a></h2>
+
+                        <p>Харизма — внутренняя сила, которая даётся свыше, когда человек начинает следовать
+                            предназначению. </p>
+                    </div>
+                </div>
+                
+                <div class="content-block">
+                    <span class="content-block__icon  _4"></span>
+
+                    <div class="content-block__text">
+                        <h2><a href="#">Сверх-способности</a></h2>
+
+                        <p>Наработка самадхи, — состояния, в котором происходит раскрытие сверх-способностей. </p>
+
+                    </div>
+                </div>
+                
+                
+                <div class="content-block ">
+                    <span class="content-block__icon _5"></span>
+
+                    <div class="content-block__text">
+                        <h2><a href="/kultura-soznaniya/">Культура сознания</a></h2>
+
+                        <p>Харизма — внутренняя сила, которая даётся свыше, когда человек начинает следовать предназначению.</p>
+                    </div>
+                </div>
+
+                <div class="content-block ">
+                    <span class="content-block__icon _6"></span>
+
+                    <div class="content-block__text">
+                        <h2><a href="/ayavasaka/">Аяваска</a></h2>
+
+                        <p>Наработка самадхи, — состояния, в котором происходит раскрытие сверх-способностей. </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="content-center__right">
+
+                        
+                <div class="content-block">
+                    <span class="content-block__icon _2"></span>
+
+                    <div class="content-block__text">
+                        <h2><a href="/harakter-lab/">Характер-лаб</a></h2>
+
+                        <p>Первая важнейшая задача — подготовить тело для принятия новых, более тонких и сильных энергий.</p>
+                    </div>
+                </div>
+                
+
+                <div class="content-block ">
+                    <span class="content-block__icon _8"></span>
+
+                    <div class="content-block__text">
+                        <h2><a href="/intuitsiya/">Интуиция</a></h2>
+
+                        <p>Остановка внутреннего диалога, состояние безмолвного знания, тренировка интуиции и психометрических
+                            способностей.</p>
+                    </div>
+                </div>
+
+
+                <div class="content-block ">
+                    <span class="content-block__icon _9"></span>
+
+                    <div class="content-block__text">
+                        <h2><a href="/vedyitantra/">Веды.Тантра</a></h2>
+
+                        <p>“Форсаж мозга” — тренировка над-логической триады (образное, парадоксальное, интуитивное
+                            мышление), </p>
+                    </div>
+                </div>
+
+
+                <div class="content-block ">
+                    <span class="content-block__icon _10"></span>
+
+                    <div class="content-block__text">
+                        <h2><a href="/master/">Мастер</a></h2>
+
+                        <p>Остановка внутреннего диалога, состояние безмолвного знания, тренировка интуиции и психометрических
+                            способностей.</p>
+                    </div>
+                </div>
+                <div class="content-block ">
+                    <span class="content-block__icon _11"></span>
+
+                    <div class="content-block__text">
+                        <h2><a href="/krug/">Круг</a></h2>
+
+                        <p>“Форсаж мозга” — тренировка над-логической триады (образное, парадоксальное, интуитивное
+                            мышление). </p>
+                    </div>
+                </div>
+                <div class="content-block ">
+                    <span class="content-block__icon _12"></span>
+
+                    <div class="content-block__text">
+                        <h2><a href="/buduschee/">Будущее</a></h2>
+
+                        <p>“Форсаж мозга” — тренировка над-логической триады (образное, парадоксальное, интуитивное
+                            мышление). </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="b-scroll b-scroll_bottom">
+            <div class="b-scroll__content b-scroll__content_center">
+                <div class="quote">
+                    {{ text_4|safe }}
+                </div>
+            </div>
+        </div>
+        
+        <div class="content content-bottom">
+            {{ text_5|safe }}
+
+        </div>
+        
+        <footer>
+            <div class="footer">
+                <h4> © 2013 Школа будущего </h4>
+            </div>
+        </footer>
+    </div>
+{% endblock %}
