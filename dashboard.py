@@ -50,18 +50,7 @@ class CustomIndexDashboard(Dashboard):
                 ),
             )
         )
-        
-        
-        self.children.append(
-            modules.ModelList(
-                title = u'Заявки и Подписки',
-                models=(
-                    'order.models.Order',
-                    'subscribe.models.Subscribe',
-                ),
-            )
-        )
-    
+          
         
         # append a recent actions module
         self.children.append(modules.RecentActions(_('Recent Actions'), 5))
@@ -71,7 +60,6 @@ class CustomIndexDashboard(Dashboard):
                 title = u'Пользователи',
                 models=(
                     'django.contrib.auth.*',
-                    'users.models.Profile',
                 ),
             )
         )
