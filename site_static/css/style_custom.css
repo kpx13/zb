@@ -9,3 +9,12 @@ header nav ul li {
     
 .content-inner__soc {
     height: 50px; }
+    
+.content-block__icon._2 {
+    background-color: #1f57d2;}
+    
+    
+.b-scroll_bottom .quote-author
+{
+    margin-top: -60px;
+}
