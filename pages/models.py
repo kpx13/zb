@@ -27,7 +27,7 @@ class Page(models.Model):
     @staticmethod
     def get_menu():
         try:
-            return [{'slug': p.slug, 'title': p.title}  for p in Page.objects.all()]
+            return [{'slug': p.slug, 'title': p.title}  for p in Page.objects.filter(order__gte=1)]
         except:
             return None
         
