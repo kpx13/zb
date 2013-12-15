@@ -18,3 +18,88 @@ header nav ul li {
 {
     margin-top: -60px;
 }
+
+.form-apply {
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #4e5b61;
+    font-size: 18px;
+    font-family: 'Myriad Pro', sans-serif;
+}
+
+.form-apply p {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 0px;
+}
+
+.form-apply ul.errorlist li, .get-book ul.errorlist li {
+    text-decoration: none;
+    list-style: none;
+    color: red;
+}
+
+.form-apply ul.errorlist, .get-book ul.errorlist {
+    margin-bottom: -10px;
+    margin-top: 3px;
+}
+
+.form-apply input {
+    margin-top: 0px;
+    line-height: 60px;
+    height: 60px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Myriad Pro', sans-serif;
+    border-radius: 2px;
+
+}
+
+.get-book input[type="text"] {
+    margin-bottom: 0px;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    font-size: 18px;
+    font-family: "Myriad Pro", sans-serif;
+
+}
+
+.get-book p {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+
+.btn-yellow {
+    color: #b30000;
+    line-height: 43px;
+    height: 43px;
+    width: 100%;
+    border-radius: 10px;
+    background: #fb9507;
+    box-shadow: inset 0 5px 60px 5px #efe518;
+    cursor: pointer;
+    font-family: 'arialblack', sans-serif;
+    color: #b30000;
+    text-transform: uppercase;
+    outline: none;
+    font-size: 18px;
+    border: none;
+}

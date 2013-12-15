@@ -111,6 +111,7 @@ INSTALLED_APPS = (
     
     'pages',
     'textblock',
+    'feedback',
 )
 
 

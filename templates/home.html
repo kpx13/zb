@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% block title %}Главная{% endblock %}
+
 {% block body %}
     <div class="page-main">
         <div class="b-scroll b-scroll_top">
@@ -21,11 +23,15 @@
 
             </div>
             <div class="form-apply">
-                <form action="">
-                    <input type="text" name="apply-name" placeholder="ВАШЕ ИМЯ..."/>
-                    <input type="text" name="apply-email" placeholder="ВАШ E-MAIL ..."/>
-                    <input class="form-apply__btn btn__green" type="submit" value="ПОДАТЬ ЗАЯВКУ НА ОБУЧЕНИЕ"/>
-                </form>
+                {% if form_send %}
+                    <h2>Ваша заявка отправлена.</h2>
+                {% else %}
+                    <form action="" method='POST'>
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <input  type="submit" class="form-apply__btn btn__green" value="ПОДАТЬ ЗАЯВКУ НА ОБУЧЕНИЕ" />
+                    </form>
+                {% endif %}
             </div>
             
             {{ text_2|safe }}

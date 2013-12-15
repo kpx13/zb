@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% block title %}Главная{% endblock %}
+
 {% block body %}
     <div class="layout">
         <div class="layout-inner">
@@ -22,7 +24,12 @@
                         <div class="content__right__top">Герман Греф о народе
                             и познании высшего Я
                         </div>
-                        <a href="#" class="content__btn-red"></a>
+                                                
+                        <audio controls>
+                            <source src="/static/gref.mp3" type="audio/mpeg">
+                            Тег audio не поддерживается вашим браузером. 
+                            <a href="/static/gref.mp3">Скачайте музыку</a>.
+                        </audio>
 
                         <p class="content__right__text">“Спасибо<br/>
                             Герману Грефу, <br/>
@@ -34,13 +41,18 @@
                         </p>
 
                     </div>
-                    <form class="get-book" action="">
-                        <input type="text" name="name" placeholder="Введите ваше имя"/>
-                        <input type="text" name="email" placeholder="Введите ваш e-mail"/>
-                        <input class="btn-yellow" type="submit" value="Получить аудиокнигу!"/>
-                    <span class="get-book__bottom">Ваши данные защищены от несанкционированного   <br/>
-    использования и передачи третьим лицам.</span>
+                    
+                    <form class="get-book" action="" method='POST'>
+                        {% if form_send %}
+                            <h2>Ваша заявка отправлена.</h2>
+                        {% else %}
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                            <input class="btn-yellow" type="submit" value="Получить аудиокнигу!"/>
+                            <span class="get-book__bottom">Ваши данные защищены от несанкционированного   <br/> использования и передачи третьим лицам.</span>
+                        {% endif %}
                     </form>
+                    
                     <div class="content__heading"></div>
                     
                     {{ text_6|safe }}

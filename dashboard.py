@@ -50,6 +50,15 @@ class CustomIndexDashboard(Dashboard):
                 ),
             )
         )
+        
+        self.children.append(
+            modules.ModelList(
+                title = u'Заявки',
+                models=(
+                    'feedback.models.Feedback',
+                ),
+            )
+        )
           
         
         # append a recent actions module
