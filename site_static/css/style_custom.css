@@ -107,3 +107,7 @@ header nav ul li {
 .content-bottom{
     padding: 50px 0 0px 0;
 }
+
+.hide {display: none}
+.hide-show {margin: 10px;}
+.container h5 {margin: 0px; padding: 0px; margin-bottom: 7px;}
