@@ -6,14 +6,16 @@
     <div class="page-main">
         <div class="b-scroll b-scroll_top">
 
-            <div class="b-scroll__content b-scroll__content_top">
+            <div class="b-scroll__content b-scroll__content_top" >
+                <h1><span>Школа будущего</span></h1>
                 <ul class="menu">
                     <li><a href="/o-shkole/">О школе</a></li>
                     <li><a href="/obuchenie/">Обучение</a></li>
-                    <li><a href="/audiobook/">Аудиокнига</a></li>
+                    <li class='audio'><a href="/audiobook/">Аудиокнига</a></li>
                 </ul>
 
-                <h1><span>Школа будущего</span></h1>
+                
+                <div style='clear: both'></div>
                 {{ text_1|safe }}
             </div>
         </div>
@@ -29,7 +31,7 @@
                     <form action="" method='POST'>
                         {% csrf_token %}
                         {{ form.as_p }}
-                        <input  type="submit" class="form-apply__btn btn__green" value="ПОДАТЬ ЗАЯВКУ НА ОБУЧЕНИЕ" />
+                        <input  type="submit" class="form-apply__btn btn__green" value="ПОЛУЧИТЬ НОВЫЕ ЗНАНИЯ!" />
                     </form>
                 {% endif %}
             </div>
