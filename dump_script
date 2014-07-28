@@ -1,0 +1,1 @@
+python manage.py collectstatic feedback pages textblock > dump____.json
